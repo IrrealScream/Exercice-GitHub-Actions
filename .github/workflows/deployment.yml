@@ -10,7 +10,7 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v6
       - name: Build Project
-        run: echo "Build Project.."
+        run: npm run build
   lint:
     needs: build
     runs-on: ubuntu-latest
